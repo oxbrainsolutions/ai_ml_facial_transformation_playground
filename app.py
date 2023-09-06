@@ -1113,7 +1113,7 @@ footer = """
 <div class="content-container">
     <div class="footer">
         <div class="left-column-footer">
-            <b><span style="color: #FAFAFA;">Contents &copy; oxbr</span><span style="color: #FCBC24;">AI</span><span style="color: #FAFAFA;">n 2023</span></b>
+            <b><span style="color: #FAFAFA;">Created by Alex White 2023</span></b>
         </div>
         <div class="middle-column-footer">
             <b>DISCLAIMER: No images or data are recorded or stored. This playground is intended for educational purposes only.</b>
