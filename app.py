@@ -1016,7 +1016,7 @@ with col2:
              #               cv2.rectangle(image, (int(bb.xmin * width), int(bb.ymin * height)), (int(bb.xmin * width + bb.width * width), int(bb.ymin * height + bb.height * height)), (36, 188, 252), 4)
                             abs_delta_x = float(bb.width * width * delta_x)
                             abs_delta_y = float(bb.height * height * delta_y)
-                            cv2.rectangle(image, (int(bb.xmin * width - abs_delta_x), int(bb.ymin * height - abs_delta_y)), (int(bb.xmin * width + bb.width * width + abs_delta_x), int(bb.ymin * height + bb.height * height)), (36, 188, 252), 4)
+                            cv2.rectangle(image, (int(bb.xmin * width - abs_delta_x), int(bb.ymin * height - abs_delta_y)), (int(bb.xmin * width + bb.width * width + abs_delta_x), int(bb.ymin * height + bb.height * height)), (71, 33, 0), 4)
             
                     if results_mesh.multi_face_landmarks:
                         for face_landmarks in results_mesh.multi_face_landmarks:
