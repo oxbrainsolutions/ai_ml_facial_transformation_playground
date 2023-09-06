@@ -845,14 +845,14 @@ with col4:
         target_landmarks, _, target_face_landmarks= detector.find_face_landmarks(target_image)
         target_image_out = detector.drawLandmarks(target_image, target_face_landmarks)
         maskGenerator.calculateTargetInfo(target_image, target_alpha, target_landmarks)     
-        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (252, 188, 36, 0), 30)
+        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (0, 33, 71, 0), 30)
         st.image(target_image_out, use_column_width=True)
     if st.session_state.user_face_select == "Elvis Presley":
         target_image, target_alpha = detector.load_target_img("images/elvis.png")
         target_landmarks, _, target_face_landmarks= detector.find_face_landmarks(target_image)
         target_image_out = detector.drawLandmarks(target_image, target_face_landmarks)
         maskGenerator.calculateTargetInfo(target_image, target_alpha, target_landmarks)
-        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (252, 188, 36, 0), 30)
+        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (0, 33, 71, 0), 30)
         st.image(target_image_out, use_column_width=True)
     if st.session_state.user_face_select == "Hulk":
         target_image, target_alpha = detector.load_target_img("images/hulk.png")
@@ -866,21 +866,21 @@ with col4:
         target_landmarks, _, target_face_landmarks= detector.find_face_landmarks(target_image)
         target_image_out = detector.drawLandmarks(target_image, target_face_landmarks)
         maskGenerator.calculateTargetInfo(target_image, target_alpha, target_landmarks)
-        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (252, 188, 36, 0), 30)
+        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (0, 33, 71, 0), 30)
         st.image(target_image_out, use_column_width=True)
     if st.session_state.user_face_select == "Terminator":
         target_image, target_alpha = detector.load_target_img("images/terminator.png")
         target_landmarks, _, target_face_landmarks= detector.find_face_landmarks(target_image)
         target_image_out = detector.drawLandmarks(target_image, target_face_landmarks)
         maskGenerator.calculateTargetInfo(target_image, target_alpha, target_landmarks)
-        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (252, 188, 36, 0), 30)
+        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (0, 33, 71, 0), 30)
         st.image(target_image_out, use_column_width=True)
     if st.session_state.user_face_select == "Tom Cruise":
         target_image, target_alpha = detector.load_target_img("images/tom_cruise.png")
         target_landmarks, _, target_face_landmarks= detector.find_face_landmarks(target_image)
         target_image_out = detector.drawLandmarks(target_image, target_face_landmarks)
         maskGenerator.calculateTargetInfo(target_image, target_alpha, target_landmarks)
-        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (252, 188, 36, 0), 30)
+        cv2.rectangle(target_image_out, (0, 0), (target_image_out.shape[1], target_image_out.shape[0]), (0, 33, 71, 0), 30)
         st.image(target_image_out, use_column_width=True)
     
 col1, col2, col3 = st.columns([2, 4, 2])
@@ -923,7 +923,7 @@ with col2:
          #               cv2.rectangle(image, (int(bb.xmin * width), int(bb.ymin * height)), (int(bb.xmin * width + bb.width * width), int(bb.ymin * height + bb.height * height)), (36, 188, 252), 4)
                         abs_delta_x = float(bb.width * width * delta_x)
                         abs_delta_y = float(bb.height * height * delta_y)
-                        cv2.rectangle(image, (int(bb.xmin * width - abs_delta_x), int(bb.ymin * height - abs_delta_y)), (int(bb.xmin * width + bb.width * width + abs_delta_x), int(bb.ymin * height + bb.height * height)), (36, 188, 252), 4)
+                        cv2.rectangle(image, (int(bb.xmin * width - abs_delta_x), int(bb.ymin * height - abs_delta_y)), (int(bb.xmin * width + bb.width * width + abs_delta_x), int(bb.ymin * height + bb.height * height)), (71, 33, 0), 4)
                 
                 return av.VideoFrame.from_ndarray(image, format="bgr24")
     
